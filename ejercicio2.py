@@ -2,8 +2,8 @@ total_equipos_disponibles = 0
 equipos_disponibles = 25
 total_equipos_liberados = 0
 total_equipos_asignados = 0 
-opcion = 0
-while opcion == 0:
+salir = 1
+while salir == 1:
     try:
         print("===== ¡BIENVENIDO AL SISTEMA DE GESTION DE EQUIPOS DEL LABORATORIO CENTRAL DE INVESTIGACION! =======")
         print("1.- Equipos disponibles")
@@ -44,8 +44,8 @@ while opcion == 0:
             print(f"Equipos disponibles: {equipos_disponibles}")
             print("========================================================°")
         case 5:
-            opcion = int(input("\nDesea salir 0)Si 1)No"))
-            if opcion == 0:
+            salir = int(input("\nDesea salir 0)Si 1)No"))
+            if salir == 0:
                 print("Saliendo del programa")
                 break
             else:
@@ -53,4 +53,3 @@ while opcion == 0:
                 continue
         case _:
             print("Opcion inválida....")
-            
